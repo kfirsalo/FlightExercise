@@ -54,7 +54,7 @@ async function findFlightPath(){
 }
 
 function printPath(airportsPath){
-    airportsPath.forEach(airport => console.log("| ",airport.AIRPORT,": ", airport.LATITUDE, " |"))
+    airportsPath.forEach(airport => console.log("| ",airport.AIRPORT,": ", airport.LATITUDE, " |"));
 }
 async function summerizeFlightPath(){
     const airportsPath = await findFlightPath();
