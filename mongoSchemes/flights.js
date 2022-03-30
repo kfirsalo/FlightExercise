@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 
 const FlightSchema = new mongoose.Schema({
 	Year: { type: Number, required: true },
@@ -38,5 +38,4 @@ const FlightSchema = new mongoose.Schema({
 
 const model = mongoose.model('flights', FlightSchema)
 
-module.exports = model
-															
+export default model;															
